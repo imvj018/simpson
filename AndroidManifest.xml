@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="app.trial.simpsons">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/s_co"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/circles_co"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Simpsons">
+        <activity android:name=".obMatIdetail"></activity>
+        <activity android:name=".MatIdetail" />
+        <activity android:name=".obMatscanDetail" />
+        <activity android:name=".obMatDetail" />
+        <activity android:name=".otoMaterial" />
+        <activity android:name=".MatscanDetail" />
+        <activity android:name=".MatDetail" />
+        <activity android:name=".itoMaterial" />
+        <activity android:name=".test" />
+        <activity android:name=".queueoto" />
+        <activity android:name=".pendingoto" />
+        <activity android:name=".completedoto" />
+        <activity android:name=".ob1.active1.activeoto" />
+        <activity android:name=".pendingito" />
+        <activity android:name=".completedito" />
+        <activity android:name=".inbound1.activeito" />
+        <activity android:name=".queueito" />
+        <activity android:name=".outbound" />
+        <activity android:name=".inbound" />
+        <activity android:name=".dashboard" />
+        <activity android:name=".Login" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CaptureAct"
+            android:screenOrientation="fullSensor"
+            android:stateNotNeeded="true"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            tools:ignore="Instantiatable" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
